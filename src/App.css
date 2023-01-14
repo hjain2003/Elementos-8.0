@@ -8,6 +8,10 @@
   font-family:headingfont;
   src: url('./fonts/ethnocentric\ rg\ it.otf');
 }
+@font-face {
+  font-family:abtheading;
+  src: url('./fonts/High\ Speed.ttf');
+}
 *{
   margin:0rem;
   padding:0rem;
@@ -15,6 +19,10 @@
   box-sizing: border-box;
   list-style: none;
 }
+/* body{
+  background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?auto=format&h=200');
+
+} */
 
 html{
   font-size: 62.5%;
@@ -30,6 +38,7 @@ html{
   color: white;
 }
 #navbar{
+  position: sticky;
   color: black;
   /* display: flex; */
   /* justify-content: right; */
@@ -38,6 +47,9 @@ html{
   /* background-color: white; */
   font-family:'Fira Code';
   font-size: 1.8rem;
+}
+.cursorpointer{
+  cursor: pointer;
 }
 .logo{
   font-size: 3.0rem;
@@ -114,6 +126,7 @@ html{
 @media (max-width:858px){
   #navbar{
     height: 1.0rem;
+    background-color: black;
   }
   .checkbtn{
     display: block;
@@ -126,6 +139,8 @@ html{
     left:-100%;
     text-align: center;
     transition: all .5s;
+    background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?auto=format&h=200');
+
   }
   #navbar ul li{
     display: block;
@@ -142,6 +157,7 @@ html{
     font-size: 10rem;
   }
 }
+
 #landingpage
 {
   /* margin-top: -60px; */
@@ -155,7 +171,9 @@ html{
   background-color: rgb(32, 30, 30);
   text-align: center;
   animation: movedown 0.8s ease-out;
-  background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?auto=format&h=200');
+  /* background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?auto=format&h=200'); */
+  /* background-image: url('https://images.unsplash.com/photo-1593959734793-6e92d102da1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGFyayUyMGJsdWUlMjBza3l8ZW58MHx8MHx8&w=1000&q=80'); */
+  background-image: url('https://images.unsplash.com/photo-1544656376-ffe19d4b7353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBza3l8ZW58MHx8MHx8&w=1000&q=80');
 }
 
 @keyframes movedown {
@@ -163,7 +181,7 @@ html{
   /* 50%{transform: translateY(-20vh);} */
 }
 #landingpage h1{
-  color:rgb(221, 44, 44);
+  color:rgb(234, 65, 65);
 }
 .glitch{
   text-shadow: 2px 2px 0px white;
@@ -240,4 +258,56 @@ h1:hover span {
   html {
     scroll-behavior: smooth;
   }
+}
+
+/* ///////////////////////////////////////////ABOUT///////////////////////////////////////////////////////////////// */
+
+#aboutmaindiv{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1544656376-ffe19d4b7353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBza3l8ZW58MHx8MHx8&w=1000&q=80');
+
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  /* border: 2rem solid white; */
+}
+#abtheading{
+  color: white;
+  font-size: 5.0rem;
+  margin-left: 10.0rem;
+  margin-top: 4.0rem;
+  font-family: 'abtheading';
+  text-shadow: .5rem .5rem purple;
+}
+#AbtText_ufo{
+  display: flex;
+  flex-direction: row;
+}
+#AbtText{
+  display: flex;
+  margin: auto;
+  margin-left: 10.0rem;
+  justify-content: center;
+  align-items: center;
+  width: 75.0rem;
+  height: 38.0rem;
+  /* border: 2rem solid white; */
+  color: rgb(122, 2, 112);
+  font-weight: 500;
+  padding: 4.0rem;
+  font-size: 2.5rem;
+  border-top-right-radius: 6.0rem;
+  border-bottom-right-radius: 6.0rem;
+  background-color: rgba(240, 248, 255, 0.734);
+  /* box-shadow: 5rem 5rem 10rem rgb(209, 199, 7); */
+}
+#AbtText_ufo img{
+  height: 35.0rem;
+  width: 35.0rem;
+  border-radius: 100%;
+  margin-left: 20.0rem;
+  transform: rotate(30deg);
+  margin-top: -5.0rem;
 }

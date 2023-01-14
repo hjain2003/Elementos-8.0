@@ -1,18 +1,23 @@
 import './App.css';
-import Landingpage from './components/Landingpage';
+import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
+import About from './components/About';
+import { Routes, Route} from 'react-router';
 
 function App() {
   return (
     <>
-    <div id="firstpagecontainer">
+   
+     <div id="firstpagecontainer">
     <div className="box">
       <Navbar/>
       </div>
     <div className="lpoverlay">
-      <Landingpage/>
+      <LandingPage/>
       </div>
     </div>
+    <About/>
+    
     </>
   );
 }

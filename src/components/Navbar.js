@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   return (
@@ -12,8 +13,8 @@ const Navbar = () => {
        {/* <label htmlFor="" className="logo">IETE</label> */}
 
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><Link activeClass='active' to="landingpage" spy={true} smooth={true} className="cursorpointer">Home</Link></li>
+                <li><Link to="aboutmaindiv" spy={true} smooth={true} className="cursorpointer">About</Link></li>
                 <li><a href="">Events</a></li>
                 <li><a href="">Schedule</a></li>
                 <li><a href="">Gallery</a></li>
@@ -26,3 +27,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
