@@ -204,7 +204,7 @@ h1:hover span:nth-child(2) {
 }
 h1:hover span {
   color: #fff;
-  text-shadow: 0 0 0.5rem #fff, 0 0 1.0rem #fff, 0 0 3.0rem #fff;
+  text-shadow: 0 0 0.1rem #fff, 0 0 1.0rem #fff, 0 0 3.0rem #fff;
 }
 
 #downarrow{
@@ -294,14 +294,15 @@ h1:hover span {
   width: 75.0rem;
   height: 38.0rem;
   /* border: 2rem solid white; */
-  color: rgb(122, 2, 112);
-  font-weight: 500;
+  color: rgb(118, 4, 150);
+  font-weight: 400;
   padding: 4.0rem;
   font-size: 2.5rem;
+  /* border-radius: 6.0rem; */
   border-top-right-radius: 6.0rem;
   border-bottom-right-radius: 6.0rem;
   background-color: rgba(240, 248, 255, 0.734);
-  /* box-shadow: 5rem 5rem 10rem rgb(209, 199, 7); */
+  box-shadow: 3rem 3rem 0rem rgb(18, 239, 239);
 }
 #AbtText_ufo img{
   height: 35.0rem;
@@ -310,4 +311,47 @@ h1:hover span {
   margin-left: 20.0rem;
   transform: rotate(30deg);
   margin-top: -5.0rem;
+}
+@media (max-width:900px){
+  #aboutmaindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #abtheading{
+    display: flex;
+    margin-left:0px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #AbtText{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 120rem;
+    width: 100rem;
+    padding: 20px;
+    margin-left: 0px;
+    line-height: 35px;
+  }
+}
+@media (max-width:520px){
+  #AbtText{
+    height: 170rem;
+  }
+}
+@media (max-width:420px){
+  #AbtText{
+    height: 210rem;
+    line-height:30px;
+    font-size: 18px;
+    width: 130rem;
+  }
+  #abtheading{
+    font-size: 25px;
+  }
 }
