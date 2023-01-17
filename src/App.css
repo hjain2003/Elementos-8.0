@@ -168,23 +168,45 @@ html{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(32, 30, 30);
+  /* background-color: rgb(32, 30, 30); */
   text-align: center;
-  animation: movedown 0.8s ease-out;
+  /* animation: movedown 0.8s ease-out; */
   /* background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?auto=format&h=200'); */
   /* background-image: url('https://images.unsplash.com/photo-1593959734793-6e92d102da1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGFyayUyMGJsdWUlMjBza3l8ZW58MHx8MHx8&w=1000&q=80'); */
   background-image: url('https://images.unsplash.com/photo-1544656376-ffe19d4b7353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBza3l8ZW58MHx8MHx8&w=1000&q=80');
+  /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOTVOr-5VN3aBK-W-ln8KSc4nQ71rDDpzZSQ&usqp=CAU'); */
 }
 
 @keyframes movedown {
   0%{transform: translateY(-100vh);}
   /* 50%{transform: translateY(-20vh);} */
 }
+
 #landingpage h1{
   color:rgb(234, 65, 65);
 }
 .glitch{
   text-shadow: 2px 2px 0px white;
+  animation: moveright 0.9s;
+}
+@keyframes moveright {
+  /* 0%{opacity: 0%;} */
+  0%{transform: translateX(-800px);}
+  30%{transform: translateX(20px);}
+  40%{transform: translateX(-10px);}
+  60%{transform: translateX(5px);}
+  80%{transform: translateX(-5px);}
+}
+.glow{
+  animation: moveleft 0.9s;
+}
+@keyframes moveleft {
+  /* 50%{text-shadow: 0 0 0.1rem #fff, 0 0 1.0rem #fff, 0 0 3.0rem #fff;} */
+  0%{transform: translateX(800px);}
+  30%{transform: translateX(-20px);}
+  40%{transform: translateX(10px);}
+  60%{transform: translateX(-5px);}
+  80%{transform: translateX(5px);}
 }
 #landingpage h1:hover{
   cursor: pointer;
@@ -192,6 +214,9 @@ html{
 #eight
 {
   color: white;
+  /* animation: glowitt 1s ease-in-out; */
+  /* animation-delay: 1s; */
+  /* transition: 2s; */
 }
 h1 span {
   transition: 0.5s ease-out;
@@ -267,14 +292,16 @@ h1:hover span {
   height: 100vh;
   width: 100%;
   background-image: url('https://images.unsplash.com/photo-1544656376-ffe19d4b7353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBza3l8ZW58MHx8MHx8&w=1000&q=80');
-
+  /* background-image: url('https://images.unsplash.com/photo-1572925077991-61acf7d70608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhcnMlMjBhbmQlMjBtb29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80'); */
+  /* background-image: url('./images/moon.svg'); */
   background-repeat: no-repeat;
-  
+  /* background-position: 200px 0px; */
   background-size: cover;
+  background-position: center center;
   /* border: 2rem solid white; */
 }
 #abtheading{
-  color: white;
+  color: rgb(17, 235, 217);
   font-size: 5.0rem;
   margin-left: 10.0rem;
   margin-top: 4.0rem;
@@ -283,7 +310,7 @@ h1:hover span {
 }
 #AbtText_ufo{
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 #AbtText{
   display: flex;
@@ -291,28 +318,35 @@ h1:hover span {
   margin-left: 10.0rem;
   justify-content: center;
   align-items: center;
-  width: 75.0rem;
+  width: 90.0rem;
   height: 38.0rem;
+  font-family: cursive;
   /* border: 2rem solid white; */
-  color: rgb(118, 4, 150);
-  font-weight: 400;
+  color: white;
+  font-weight: 500;
   padding: 4.0rem;
   font-size: 2.5rem;
+  line-height: 4rem;
   /* border-radius: 6.0rem; */
   border-top-right-radius: 6.0rem;
   border-bottom-right-radius: 6.0rem;
-  background-color: rgba(240, 248, 255, 0.734);
-  box-shadow: 3rem 3rem 0rem rgb(18, 239, 239);
+  background-color: rgba(11, 105, 91, 0.734);
+  box-shadow: 1rem 1rem 0rem rgb(5, 131, 142);
 }
 #AbtText_ufo img{
-  height: 35.0rem;
-  width: 35.0rem;
+  height: 40.0rem;
+  width: 40.0rem;
   border-radius: 100%;
-  margin-left: 20.0rem;
+  margin-left: 10.0rem;
   transform: rotate(30deg);
   margin-top: -5.0rem;
 }
 @media (max-width:900px){
+  #AbtText_ufo img{
+    margin-left: -50rem;
+    z-index: 0;
+  }
+
   #aboutmaindiv{
     display: flex;
     justify-content: center;
@@ -321,12 +355,14 @@ h1:hover span {
   #abtheading{
     display: flex;
     margin-left:0px;
+    font-size: 30px;
     margin: auto;
     justify-content: center;
     align-items: center;
 
   }
   #AbtText{
+    z-index: 1;
     display: flex;
     margin: auto;
     justify-content: center;
