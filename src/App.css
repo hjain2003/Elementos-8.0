@@ -38,7 +38,7 @@ html{
   color: white;
 }
 #navbar{
-  position: sticky;
+  /* position: sticky; */
   color: black;
   /* display: flex; */
   /* justify-content: right; */
@@ -127,6 +127,9 @@ html{
   #navbar{
     height: 1.0rem;
     background-color: black;
+    position: fixed;
+    right: 10rem;
+    z-index: 2000;
   }
   .checkbtn{
     display: block;
@@ -139,7 +142,8 @@ html{
     left:-100%;
     text-align: center;
     transition: all .5s;
-    background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?auto=format&h=200');
+    /* background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?auto=format&h=200'); */
+    background-image: url('./images/space.jpg');
 
   }
   #navbar ul li{
@@ -184,29 +188,33 @@ html{
 
 #landingpage h1{
   color:rgb(234, 65, 65);
+  color: rgb(17, 235, 217);
+  z-index: 1;
 }
 .glitch{
-  text-shadow: 2px 2px 0px white;
+  text-shadow: .5rem .5rem 0rem purple;
   animation: moveright 0.9s;
 }
 @keyframes moveright {
   /* 0%{opacity: 0%;} */
-  0%{transform: translateX(-800px);}
-  30%{transform: translateX(20px);}
-  40%{transform: translateX(-10px);}
-  60%{transform: translateX(5px);}
-  80%{transform: translateX(-5px);}
+  0%{transform: translateX(-80.0rem);}
+  30%{transform: translateX(2.0rem);}
+  40%{transform: translateX(-1.0rem);}
+  60%{transform: translateX(.5rem);}
+  80%{transform: translateX(-.5rem);}
 }
 .glow{
   animation: moveleft 0.9s;
+  text-shadow: .5rem .5rem 0rem purple;
+  
 }
 @keyframes moveleft {
   /* 50%{text-shadow: 0 0 0.1rem #fff, 0 0 1.0rem #fff, 0 0 3.0rem #fff;} */
-  0%{transform: translateX(800px);}
-  30%{transform: translateX(-20px);}
-  40%{transform: translateX(10px);}
-  60%{transform: translateX(-5px);}
-  80%{transform: translateX(5px);}
+  0%{transform: translateX(80.0rem);}
+  30%{transform: translateX(-2.0rem);}
+  40%{transform: translateX(1.0rem);}
+  60%{transform: translateX(-.5rem);}
+  80%{transform: translateX(.5rem);}
 }
 #landingpage h1:hover{
   cursor: pointer;
@@ -230,6 +238,13 @@ h1:hover span:nth-child(2) {
 h1:hover span {
   color: #fff;
   text-shadow: 0 0 0.1rem #fff, 0 0 1.0rem #fff, 0 0 3.0rem #fff;
+}
+
+#typewriter{
+  color: white;
+  font-size: 4.0rem;
+  text-shadow: .2rem .2rem 0rem rgb(33, 227, 220);
+  margin-top: 3rem;
 }
 
 #downarrow{
@@ -307,6 +322,7 @@ h1:hover span {
   margin-top: 4.0rem;
   font-family: 'abtheading';
   text-shadow: .5rem .5rem purple;
+  z-index: 99;
 }
 #AbtText_ufo{
   display: flex;
@@ -332,15 +348,30 @@ h1:hover span {
   border-bottom-right-radius: 6.0rem;
   background-color: rgba(11, 105, 91, 0.734);
   box-shadow: 1rem 1rem 0rem rgb(5, 131, 142);
+  z-index: 80;
 }
 #AbtText_ufo img{
   height: 40.0rem;
   width: 40.0rem;
   border-radius: 100%;
-  margin-left: 10.0rem;
-  transform: rotate(30deg);
-  margin-top: -5.0rem;
+  margin-left: -15.0rem;
+  /* transform: rotate(30deg); */
+  margin-top: -8.0rem;
+  /* z-index: -1; */
 }
+#rocket{
+  height: 30rem;
+  width: 40rem;
+  border-radius: 100%;
+  margin-top: -25rem;
+  margin-left: 20rem;
+  transform:rotate(30deg);
+}
+#rocket_img{
+  margin-top: -10rem;
+}
+
+
 @media (max-width:900px){
   #AbtText_ufo img{
     margin-left: -50rem;
@@ -354,7 +385,7 @@ h1:hover span {
   }
   #abtheading{
     display: flex;
-    margin-left:0px;
+    margin-left:0rem;
     font-size: 30px;
     margin: auto;
     justify-content: center;
@@ -389,5 +420,13 @@ h1:hover span {
   }
   #abtheading{
     font-size: 25px;
+  }
+  #rocket{
+    height: 80rem;
+    width: 90rem;
+    border-radius: 100%;
+    margin-top: -100rem;
+    margin-left: 20rem;
+    transform:rotate(40deg);
   }
 }
