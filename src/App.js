@@ -1,10 +1,12 @@
 import "./App.css";
-import LandingPage from "./components/LandingPage";
+import LandingPage from "./components/Landingpage";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Canvas from "./components/BgCanvas";
 import { Routes, Route } from "react-router";
 import TimeLine from "./components/TimeLine";
+import Timeline from "./components/Timeline";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       </div>
       <About />
       <TimeLine />
+
+      <Contact />
     </>
   );
 }
