@@ -1,5 +1,5 @@
 import "./App.css";
-import LandingPage from "./components/LandingPage";
+import LandingPage from "./components/Landingpage";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Canvas from "./components/BgCanvas";
