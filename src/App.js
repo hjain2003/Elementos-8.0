@@ -25,6 +25,8 @@ function App() {
       <TimeLine />
 
       <Contact />
+
+
     </>
   );
 }
