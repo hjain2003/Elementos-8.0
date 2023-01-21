@@ -5,7 +5,7 @@ import About from "./components/About";
 import Canvas from "./components/BgCanvas";
 import { Routes, Route } from "react-router";
 import TimeLine from "./components/TimeLine";
-import Timeline from "./components/Timeline";
+
 import Contact from "./components/Contact";
 
 function App() {
