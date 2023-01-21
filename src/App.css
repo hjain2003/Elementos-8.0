@@ -453,10 +453,120 @@ h1:hover span {
   }
 }
 
+/* ......................................................CANVA.......................................................................... */
 .BgCanavs {
   position: fixed;
 height:100vh;
   left: 0;
   top: 0;
   z-index: -1;
+}
+/* ..........................................................TIMELINE...........................................................*/
+
+
+#Timeline{
+  font-size: 70px;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+
+
+
+/* .....................................................................CONTACT..................................................... */
+
+#ContactSection{
+  height: 400px;
+  background-color: black;
+  background-image: url('./images/space.jpg');
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-around;
+}
+#Contact_Wrapper{
+  display: flex;
+  flex-direction: row;
+  /* margin: auto; */
+  align-items: center;
+  /* padding: 20px; */
+  justify-content: space-around;
+  width: 1300px;
+  /* border:2px solid white; */
+}
+#IETE_Logo img{
+  height: 400px;
+  width: 400px;
+}
+
+
+#Useful_Links{
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+#Useful_Links hr,#links hr{
+  width: 270px;
+}
+#links{
+  font-weight: 400;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  font-size: 22px;
+  line-height: 50px;
+}
+#Useful_Links hr{
+  border-top: 2px solid rgb(47, 195, 146);
+  border-bottom: 2px solid rgb(47, 195, 146);
+  border-radius: 10px;
+}
+#links hr{
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+#links img{
+  height:15px;
+  width: 15px;
+}
+
+
+
+#SocialMedia{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 24px;
+}
+#Contact_Heading{
+  font-weight: 500;
+  line-height: 50px;
+}
+#SocialMedia hr{
+  border-top: 2px solid rgb(47, 195, 146);
+  border-bottom: 2px solid rgb(47, 195, 146);
+  border-radius: 10px;
+}
+#contact_details{
+  margin-top: 30px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  line-height: 35px;
+}
+#logos{
+  margin-top: 50px;
+}
+#logos img{
+  height: 35px;
+  width: 35px;
 }

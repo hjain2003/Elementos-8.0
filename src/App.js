@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Canvas from "./components/BgCanvas";
 import { Routes, Route } from "react-router";
+import Timeline from "./components/Timeline";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         </div>
       </div>
       <About />
+      <Timeline/>
+      <Contact/>
     </>
   );
 }

@@ -4,9 +4,9 @@ import { useCallback } from "react";
 // constants
 const COLOR_SPACE = "black";
 const COLOR_STARS = "white";
-const STAR_NUM = 200; // number of stars in the starfield
-const STAR_SIZE = 0.005; // max star size as a fraction of screen width
-const STAR_SPEED = 0.4; // fraction of screen width per second
+const STAR_NUM = 500; // number of stars in the starfield
+const STAR_SIZE = 0.003; // max star size as a fraction of screen width
+const STAR_SPEED = 0.2; // fraction of screen width per second
 var stars = [];
 function randomSign() {
   return Math.random() >= 0.5 ? 1 : -1;
