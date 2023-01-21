@@ -20,7 +20,7 @@ function App() {
         </div>
       </div>
       <About />
-      <Timeline/>
+      {/* <Timeline/> */}
       <Contact/>
     </>
   );

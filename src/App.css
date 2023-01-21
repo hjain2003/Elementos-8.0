@@ -481,62 +481,63 @@ height:100vh;
 /* .....................................................................CONTACT..................................................... */
 
 #ContactSection{
-  height: 400px;
-  background-color: black;
-  background-image: url('./images/space.jpg');
+  height: 40.0rem;
+  background-color: rgb(40, 38, 38);
+  /* background-image: url('./images/space.jpg'); */
   display: flex;
   /* flex-direction: row; */
   align-items: center;
   justify-content: space-around;
+  width: 100%;
 }
 #Contact_Wrapper{
   display: flex;
   flex-direction: row;
   /* margin: auto; */
   align-items: center;
-  /* padding: 20px; */
+  /* padding: 20rem; */
   justify-content: space-around;
-  width: 1300px;
-  /* border:2px solid white; */
+  width: 130.0rem;
+  /* border:2rem solid white; */
 }
 #IETE_Logo img{
-  height: 400px;
-  width: 400px;
+  height: 40.0rem;
+  width: 40.0rem;
 }
 
 
 #Useful_Links{
-  line-height: 50px;
-  font-size: 24px;
+  line-height: 5.0rem;
+  font-size: 2.4rem;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   color: white;
 }
 #Useful_Links hr,#links hr{
-  width: 270px;
+  width: 27.0rem;
 }
 #links{
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: 1.0rem;
   display: flex;
   flex-direction: column;
-  padding: 10px 0px;
-  font-size: 22px;
-  line-height: 50px;
+  padding: 1.0rem 0rem;
+  font-size: 2.2rem;
+  line-height: 5.0rem;
 }
 #Useful_Links hr{
-  border-top: 2px solid rgb(47, 195, 146);
-  border-bottom: 2px solid rgb(47, 195, 146);
-  border-radius: 10px;
+  border-top: .2rem solid rgb(47, 195, 146);
+  border-bottom: .2rem solid rgb(47, 195, 146);
+  border-radius: 1.0rem;
 }
 #links hr{
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: .1rem solid grey;
+  border-bottom: .1rem solid grey;
 }
 #links img{
-  height:15px;
-  width: 15px;
+  height:1.5rem;
+  width: 1.5rem;
 }
 
 
@@ -545,28 +546,73 @@ height:100vh;
   display: flex;
   flex-direction: column;
   color: white;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 #Contact_Heading{
   font-weight: 500;
-  line-height: 50px;
+  line-height: 5.0rem;
 }
 #SocialMedia hr{
-  border-top: 2px solid rgb(47, 195, 146);
-  border-bottom: 2px solid rgb(47, 195, 146);
-  border-radius: 10px;
+  border-top: .2rem solid rgb(47, 195, 146);
+  border-bottom: .2rem solid rgb(47, 195, 146);
+  border-radius: 1.0rem;
 }
 #contact_details{
-  margin-top: 30px;
-  font-size: 22px;
+  margin-top: 3.0rem;
+  font-size: 2.2rem;
   display: flex;
   flex-direction: column;
-  line-height: 35px;
+  line-height: 3.5rem;
 }
 #logos{
-  margin-top: 50px;
+  margin-top: 4.0rem;
 }
 #logos img{
-  height: 35px;
-  width: 35px;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+@media (max-width:800px)
+{
+  #Contact_Wrapper{
+    flex-direction: column;
+  }
+  #ContactSection{
+    height: 160rem;
+  }
+  #Useful_Links{
+    font-size: 5rem;
+    line-height: 10rem;
+  }
+  #Useful_Links hr{
+    width: 40rem;
+  }
+  #links{
+    font-size: 4rem;
+    line-height: 8rem;
+  }
+  #SocialMedia{
+    margin-top: 5rem;
+    /* line-height: 5 rem; */
+  }
+  #SocialMedia hr{
+    width: 40rem;
+    line-height: 8rem;
+  }
+  #Contact_Heading{
+    font-size: 5rem;
+    line-height: 10rem;
+  }
+  #contact_details{
+    font-size: 3.5rem;
+    line-height: 8rem;
+  }
+  #logos img{
+    height: 5 rem;
+    width: 5 rem;
+  }
+  #IETE_Logo img{
+    height: 50.0rem;
+    width: 50.0rem;
+  }
+  
 }
