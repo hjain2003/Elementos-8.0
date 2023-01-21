@@ -144,7 +144,8 @@ html {
     text-align: center;
     transition: all 0.5s;
     /* background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg?auto=format&h=200'); */
-    background-image: url("./images/space.jpg");
+    /* background-image: url("./images/space.jpg"); */
+    background: rgb(0 0 0 / 70%);
   }
   #navbar ul li {
     display: block;
@@ -458,4 +459,67 @@ h1:hover span {
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+#timeline h1 {
+  color: rgb(234, 65, 65);
+  color: rgb(17, 235, 217);
+  z-index: 1;
+  font-family: "headingfont";
+  font-size: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: rgb(32, 30, 30); */
+  text-align: center;
+}
+
+.card {
+  /* perspective: 150rem; */
+  /* position: relative; */
+  height: 40rem;
+  /* max-width: 400px; */
+  /* margin: 2rem; */
+  box-shadow: none;
+  /* background: none; */
+  background-color: transparent;
+}
+
+.card-side {
+  height: 35rem;
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 2rem;
+  color: white;
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.card-side.front {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
 }
