@@ -3,7 +3,7 @@ import React from "react";
 import timelineElements from "./data/timelineData";
 
 import {
-  VerticalTiwmeline,
+  VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
@@ -12,9 +12,9 @@ import "react-vertical-timeline-component/style.min.css";
 export default function TimeLine() {
   return (
     <>
-    <div id="timeline">
-      <h1>Timeline</h1>
-    </div>
+      <div id="timeline">
+        <h1 id="glitch">Timeline</h1>
+      </div>
       <VerticalTimeline lineColor={"none"}>
         {timelineElements.map((element) => {
           return (
