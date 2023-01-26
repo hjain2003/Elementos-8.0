@@ -3,7 +3,7 @@ import React from "react";
 import timelineElements from "./data/timelineData";
 
 import {
-  VerticalTimeline,
+  VerticalTiwmeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
