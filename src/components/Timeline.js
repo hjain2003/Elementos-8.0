@@ -13,7 +13,7 @@ export default function TimeLine() {
   return (
     <>
       <div id="timeline">
-        <h1 id="glitch">Timeline</h1>
+        <h1 className="glitch">Timeline</h1>
       </div>
       <VerticalTimeline lineColor={"none"}>
         {timelineElements.map((element) => {
