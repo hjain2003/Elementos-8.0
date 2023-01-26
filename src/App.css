@@ -1010,7 +1010,7 @@ h1:hover span {
 
 #ContactSection {
   height: 40.0rem;
-  background: rgba(38, 39, 40);
+  background: rgba(38, 39, 40, 0.561);
   /* background-image: url('./images/space.jpg'); */
   display: flex;
   /* flex-direction: row; */

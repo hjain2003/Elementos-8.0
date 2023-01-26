@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Canvas from "./components/BgCanvas";
 import { Routes, Route } from "react-router";
-import TimeLine from "./components/TimeLine";
+import TimeLine from "./components/Timeline";
 
 import Contact from "./components/Contact";
 
